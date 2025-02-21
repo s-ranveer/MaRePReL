@@ -1,4 +1,8 @@
-# RePReL RLlib Implementation
+# MaRePReL
+This repository contains an implementation of the paper <>
+
+# Abstract
+Multiagent Reinforcement Learning poses significant challenges due to the exponential growth of state, object, and action spaces and the non-stationary nature of multiagent environments. This results in notable sample inefficiency and hinders generalization across diverse tasks. The complexity is further pronounced in relational settings, where domain knowledge is crucial but often underutilized by existing MARL algorithms. To overcome these hurdles, we propose integrating relational planners as centralized controllers with efficient state abstractions and reinforcement learning. This approach proves to be sample-efficient and facilitates effective task transfer and generalization.
 
 ## Key Points
 - The current repository runs on Python Version 3.9.16 and setuptools 65.5.0

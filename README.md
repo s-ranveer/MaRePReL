@@ -54,5 +54,6 @@ nohup python scripts/run_multiagent_reprel.py \
 The last line can store the logs in a .log file
 
 ## Citation
-Please cite the work as
+Please consider citing the work if you find the work helpful.
+
 

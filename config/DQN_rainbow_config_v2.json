@@ -1,0 +1,36 @@
+{
+    "framework" :"torch",
+    "ignore_worker_failures": false,
+    "num_envs_per_worker": 1,
+    "batch_mode": "truncate_episodes",
+    "rollout_fragment_length": 4,
+
+    "exploration_config": 
+    { 
+        "epsilon_timesteps": 10000,
+        "final_epsilon": 0.05
+
+    },
+    "target_network_update_freq": 2000,
+    "lr": 0.001,  
+    "train_batch_size": 128,
+    "hiddens": [256,256],
+    "model":
+    { 
+        "dim": 40,
+        "fcnet_activation": "relu"
+    },
+    "replay_buffer_config": 
+    { 
+        "type": "MultiAgentPrioritizedReplayBuffer",
+        "capacity": 300000
+    },
+
+    "double_q": true,
+    "num_atoms": 40,
+    "n_step": 4,
+    "sigma0" :0.5,
+    "v_max": 39.8,
+    "v_min": -100.2
+    
+}
